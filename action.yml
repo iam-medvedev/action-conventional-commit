@@ -1,0 +1,33 @@
+name: "Conventional commit parser"
+description: "Conventional commit parser"
+
+inputs:
+  token:
+    description: "Github token"
+    required: true
+  major:
+    description: "Labels for major version"
+    required: false
+    default: "[]"
+  minor:
+    description: "Labels for minor version"
+    required: false
+    default: '["feat"]'
+  patch:
+    description: "Labels for patch version"
+    required: false
+    default: "[]"
+
+outputs:
+  label:
+    description: "Commit label"
+  type:
+    description: "Version type"
+
+runs:
+  using: docker
+  image: Dockerfile
+
+branding:
+  icon: paperclip
+  color: blue
