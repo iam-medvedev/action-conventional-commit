@@ -1,9 +1,10 @@
 name: "Conventional commit parser"
-description: "Parse conventional commit"
+description: "Conventional commit parser"
 
 inputs:
-  commit:
-    description: "Commit message"
+  token:
+    description: "Github token"
+    required: true
   major:
     description: "Labels for major version"
     required: false
@@ -11,7 +12,7 @@ inputs:
   minor:
     description: "Labels for minor version"
     required: false
-    default: "['feat']"
+    default: '["feat"]'
   patch:
     description: "Labels for patch version"
     required: false
