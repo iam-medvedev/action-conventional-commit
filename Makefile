@@ -1,2 +1,2 @@
 dev:
-	deno run --allow-env --allow-net --watch --lock=lock.json --lock-write ./mod.ts
+	deno run --allow-env --allow-net --watch ./mod.ts

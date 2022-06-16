@@ -1,6 +1,6 @@
+import type { Octokit } from "https://esm.sh/v85/@octokit/core@3.6.0/dist-types/index.d.ts";
 import core from "https://esm.sh/@actions/core@1.8.2";
 import github from "https://esm.sh/@actions/github@5.0.3";
-import { Octokit } from "https://esm.sh/v85/@octokit/core@3.6.0/dist-types/index.d.ts";
 import { parse } from "https://deno.land/x/commit@0.1.5/mod.ts";
 
 function getVersionType(commitType: string) {
